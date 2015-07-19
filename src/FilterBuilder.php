@@ -31,12 +31,12 @@ class FilterBuilder
      * Returns a bool filter that can be chained with the `addMust()`, `addShould()`
      * and `addMustNot()` methods.
      *
-     * @return Elastica\Filter\Bool
+     * @return Elastica\Filter\BoolFilter
      * @see http://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-bool-filter.html
      */
     public function bool()
     {
-        return new Filter\Bool();
+        return new Filter\BoolFilter();
     }
 
     /**
